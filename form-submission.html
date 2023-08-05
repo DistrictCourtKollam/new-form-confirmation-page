@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Submission Confirmation</title>
+</head>
+<body>
+    <h1>Thank you for your submission!</h1>
+    <p>Your Complaint number is: <span id="uniqueNumber"></span></p>
+
+    <script>
+        // Get the unique number from the URL parameter and display it
+        var urlParams = new URLSearchParams(window.location.search);
+        var uniqueNumber = urlParams.get('num');
+        document.getElementById('uniqueNumber').innerText = uniqueNumber;
+    </script>
+</body>
+</html>
+
